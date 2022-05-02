@@ -18,9 +18,13 @@
         .row {
             display: flex;
         }
-
         .column {
             width: 50%;
+        }
+        .container.widechart {
+            width: 100%;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
         }
     </style>
     <body id="page-top">
@@ -123,12 +127,18 @@
                             These are available in "human-readable" <code>.txt</code> files,
                             and "machine-readable" <code>.json</code> files.
                         </p>
-                        <!-- INSERT TREE HERE -->
                         <p>
                             As we can see here, we don't have much data to go off on immeidiately.
                             But we do have video links, and each video have the video metadata.
                         </p>
                     </div>
+                    <center>
+                        <div class="container widechart">
+                            <iframe width="150%" height="300" frameborder="0"
+                                src="https://observablehq.com/embed/52947cfb487311ac?cells=chart">
+                            </iframe>
+                        </div>
+                    </center>
                 </div>
             </div>
         </section>
