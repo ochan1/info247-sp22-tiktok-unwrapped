@@ -39,9 +39,9 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#section1">Introduction</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section2">User Data Downloads</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section3">What does TikTok know?</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section4">Curious about your own data?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section2">The Data Download</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section3">Analyzing Oski's Data</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section4">Curious About Your Data?</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                         </h2>
                         <p class="lead">And did you know for most websites, you can download your data? </p>
                         <p>
-                            Ever since the European Union’s General Data Protection Regulation (GDPR) was established, there has been an influx in the number of social media platforms offering data download tools to everyday users. In particular, these tools are in response to <a href='https://gdpr-info.eu/art-15-gdpr/' target="_">Article 15: the Right to Access</a>, which states that these platforms must provide users with their “personal data…in a way that’s easy to read, in a timely manner, and with enough background information to understand how they got it and how they use it.” <small><a href="https://www.theverge.com/2019/1/27/18195630/gdpr-right-of-access-data-download-facebook-google-amazon-apple" target="_">(1)</a></small>. 
+                            After the European Union’s General Data Protection Regulation (GDPR) was established, there has been an influx in the number of social media platforms offering data download tools to everyday users. In particular, these tools are in response to <a href='https://gdpr-info.eu/art-15-gdpr/' target="_">Article 15: the Right to Access</a>, which states that these platforms must provide users with their “personal data…in a way that’s easy to read, in a timely manner, and with enough background information to understand how they got it and how they use it.” <small><a href="https://www.theverge.com/2019/1/27/18195630/gdpr-right-of-access-data-download-facebook-google-amazon-apple" target="_">(1)</a></small>. 
                         </p>
                         <p>
                             As a relatively young, but hugely popular platform, we were curious how TikTok’s user download process measured up.
@@ -88,7 +88,7 @@
                             <div class="column">
                                 <p class="lead">A primer on TikTok</p>
                                 <p>  
-                                    TikTok is a  short-form video-based social media app. Videos are accessed from a primary page: the “For You” Page, often affectionately called the “fyp” for short. The For You page shows not just videos from friends and users you subscribe to, but can contain any publicly posted videos that the TikTok algorithm thinks you would like. 
+                                    TikTok is a  short-form video-based social media app. Videos are accessed from a primary page: <a href="https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you">the “For You” Page</a>, often affectionately called the “fyp” for short. The For You page shows not just videos from friends and users you subscribe to, but can contain any publicly posted videos that the TikTok recommendation algorithm thinks you may like. According to TikTok, recommendations are driven by <strong>user interactions</strong>, <strong>video information</strong>, and <strong>device/user information</strong>.
                                     </p>
                             </div>
 
@@ -179,19 +179,17 @@
             <div class="container px-4">  
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">  
-                        <h3>Data Availability ≠ Understandability </h3>
+                        <h2>What's in the Data Download file?</h2>
+                        <p class="lead">Data ≠ Information </p>
                         <p>
                         <a href=”https://www.theverge.com/2019/1/27/18195630/gdpr-right-of-access-data-download-facebook-google-amazon-apple” target="_">As others have noted</a>, just because the data is available doesn’t mean it’s digestible. The completeness and quality of the data range widely.
                         </p>
                         <p>
                             TikTok delivers downloads in human-readable" <code>.txt</code> files,
-                            and "machine-readable" <code>.json</code> files. Both are highly nested.
+                            and "machine-readable" <code>.json</code> files. However, both file types are highly nested .
                         </p>
-                        <h1> ((Insert Screenshots of txt and json here))</h1>
                         <p>
-                            The nested nature of these files makes it difficult to view the actual contents. We put together a tree navigator indicating the completeness of each of the TikTok Data Download sections.
-                            
-                            The details (once you’re able to access them) actually get quite granular. You can see your entire history of videos and the things you follow (users, sounds, hashtags), including the date and time you followed them. Also accessible are search terms, comments, and every login instance (date, time, and IP address). 
+                            The nested nature of these files makes it difficult to view the actual contents. We put together a tree navigator to explore the different sections of the TikTok Data Download, as wll as its completeness.
 
                         </p>
                     
@@ -208,11 +206,11 @@
 
                     <div class="col-lg-8">
                         <p class='mt-5 lead'>
-                            The details – once you’re able to access them – actually get quite granular. </p>
+                            The details (once you’re able to access them) are actually quite granular. </p>
                         <p>You can see your entire history of videos and the things you follow (users, sounds, hashtags), including the date and time you followed them. Also accessible are search terms, comments, and every login instance (date, time, and IP address). 
                         </p>
                         <p>
-                            None of this quite surprised us or Oski: these are all things you do on the app, after all. But seeing it all in one place, in this level of detail and magnitude made obvious the surveillance that was going on whenever Oski used the TikTok app. Even though it was not our data, it felt creepy!
+                            None of this quite surprised us or Oski: these are all things you do on the app, after all. But seeing it all in one place, in this level of detail and magnitude made obvious the sheer scope of the surveillance that occurs anytime Oski uses the TikTok app. Even though it was not our data, it felt creepy!
                         </p>
                         <p>
                             Interestingly, we noticed that the data about <strong>Ads</strong> were missing…but Oski knows he’s definitely seen ads. Other important piece of data missing included the authors and the hashtags associated with the videos watched. 
@@ -223,9 +221,31 @@
                         </p>
                         <p>Using the TikTok API (and a little help from our Capstone friends), we scraped video details - including hashtags, sounds, and author handles – for Oski’s viewing history. It looked something like this: 
                         </p>
-                        <h1>((add snapshot of data file))</h1>
+                        <h1>((NTH: add graphic of data scraping process))</h1>
                         <p class="lead text-center"> The upshot: TikTok makes it possible to get much of your personal data, and it is quite detailed. However, we had to get creative to access the video and advertising details. </p>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="section3" class="bg-light">
+            <div class="container px-4">  
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">  
+                    <h2>What does Oski’s data reveal about him...and the TikTok algorithm?</h2>
+                    <p class="lead">Analyzing Oski's data</p>
+                    <p>To shed some light on the recommendation algorithm's activity, we visualized a combination of Oski's data and the additional video details.</p>
+
+                    <h4>How did Oski's viewing activity change over time?</h4>
+
+                    <h4>What content categories is TikTok recommending to Oski?</h4>
+                    <h1>((Oscar's d3 category bubbles viz here))</h1>
+
+                    <h4>What advertisements are served?</h4>
+                    Ads are a big driver of revenue on social platforms – tiktok not excluded (TT makes $$ annually from advertising according to XXX)
+                    We took the top 100 most frequent advertisers from Oski’s data and grouped them:
+                    
+                    Many, but not all, advertising categories were related to top hashtags. 
+
 
                     <div class='tableauPlaceholder' id='viz1651652001489' style='position:center; width: 125%;'>
                         <noscript><a href='#'><img alt='Dashboard 2 '
