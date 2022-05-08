@@ -136,74 +136,97 @@
                 </center> -->
 
         </section>
+
+
+
+<!-- DATA ACCESS -->
+
         <section id="section2" class="bg-light">
-            <div class="container px-4">
+            <div class="container px-4">  
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <h2>Getting the TikTok Data</h2>
-                        <p class="lead">
-                            Getting our digital profile.
-                        </p>
-                        <p>
-                            Before one can understand how social media like TikTok
-                            affects someone's data, they would need to know the data
-                            that make up their digital profile. TikTok does allow us
-                            to download a majority of the data that they have on us
-                            and then we can get a guess of the digital profile they have on users.
-                        </p>
-                        <br/>
+                        <h2>The TikTok Data Download</h2>
+
                         <div class="row" style="width:100%">
                             <div class="column">
-                                <h3>Here's How</h3>
-                                <ol>
-                                    <li>Go to your Profile</li>
-                                    <li>Click on the setting menu on the top right (3 bars)</li>
-                                    <li>Click on "Settings and privacy"</li>
-                                    <li>Click "Privacy" in the first section</li>
-                                    <li>Click "Download your data" under "Personalization and data"</li>
-                                    <li>Select the format you want and then "Request Data"</li>
-                                    <li>After about 48 hours or so, you can find your data under the "Download data" tab at the same page</li>
-                                </ol>
-                            </div>
+                                <p class="lead">How to access your data</p>
+                                <p class="mb-5">  
+                                    Here’s how Oski–and you!–can access your TikTok data. (You can also view <a href="https://support.tiktok.com/en/account-and-privacy/personalized-ads-and-data/requesting-your-data" target="_">TikTok’s official instructions here)</a>.
+                                </p>
+                                <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roadbump or dark pattern?</h5>
+                                    <p class="card-text">TikTok takes "a few days" to process your request. TikTok then gives you a 4-day window to download the file, with few alerts. </p>
+                                    <p class="card-text">
+                                    If you miss or forget this window you are must repeat the request and waiting process. This happened to us frequently, often taking more than a week to actually obtain download files. While we can't say this friction is intentional on TikTok's part, it certainly takes some commitment and effort to obtain the data.
+                                </p>
+                                </div>
+                                </div>
+                                </div>
+
                             <div class="column" style="text-align:center;">
-                                <video width="80%" height="600" controls>
+                                <video width="100%" height="800" controls>
                                     <source src="img/tiktok_download_data_tutorial.mov" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
                         </div>
-                        <br/>
-                        <h3>The quality isn't great though</h3>
-                        <p>
-                            These are available in "human-readable" <code>.txt</code> files,
-                            and "machine-readable" <code>.json</code> files.
-                        </p>
-                        <p>
-                            As we can see here, we don't have much data to go off on immeidiately.
-                            But we do have video links, and each video have the video metadata.
-                        </p>
                     </div>
-                    <center>
-                        <div class="container widechart">
-                            <iframe width="150%" height="300" frameborder="0"
-                                src="https://observablehq.com/embed/52947cfb487311ac?cells=chart">
-                            </iframe>
-                        </div>
-                    </center>
-                    <p></p>
                 </div>
             </div>
         </section>
-        <section class="bg-light" id="section3">
-            <div class="container px-4">
+        <section id="section2">
+            <div class="container px-4">  
                 <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Section 3 - What can we find out about what TikTok knows about us?</h2>
-                        <p class="lead">
-                            Below are some statistics for a case study of one user's TikTok data and the ads
-                            that we could find in their viewing history.
+                    <div class="col-lg-8">  
+                        <h3>Data Availability ≠ Understandability </h3>
+                        <p>
+                        <a href=”https://www.theverge.com/2019/1/27/18195630/gdpr-right-of-access-data-download-facebook-google-amazon-apple” target="_">As others have noted</a>, just because the data is available doesn’t mean it’s digestible. The completeness and quality of the data range widely.
                         </p>
+                        <p>
+                            TikTok delivers downloads in human-readable" <code>.txt</code> files,
+                            and "machine-readable" <code>.json</code> files. Both are highly nested.
+                        </p>
+                        <h1> ((Insert Screenshots of txt and json here))</h1>
+                        <p>
+                            The nested nature of these files makes it difficult to view the actual contents. We put together a tree navigator indicating the completeness of each of the TikTok Data Download sections.
+                            
+                            The details (once you’re able to access them) actually get quite granular. You can see your entire history of videos and the things you follow (users, sounds, hashtags), including the date and time you followed them. Also accessible are search terms, comments, and every login instance (date, time, and IP address). 
+
+                        </p>
+                    
                     </div>
+                    
+                    <div class="container widechart mt-4 mb-4 justify-content-center">
+                    <p class="lead">The Hierarchy of TikTok's User Data Download File</p>
+                    <h1>((Explain the chart and how to navigate it here))</h1>
+                    
+                        <iframe width="150%" height="500" frameborder="0"
+                            src="https://observablehq.com/embed/52947cfb487311ac?cells=chart">
+                        </iframe>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <p class='mt-5 lead'>
+                            The details – once you’re able to access them – actually get quite granular. </p>
+                        <p>You can see your entire history of videos and the things you follow (users, sounds, hashtags), including the date and time you followed them. Also accessible are search terms, comments, and every login instance (date, time, and IP address). 
+                        </p>
+                        <p>
+                            None of this quite surprised us or Oski: these are all things you do on the app, after all. But seeing it all in one place, in this level of detail and magnitude made obvious the surveillance that was going on whenever Oski used the TikTok app. Even though it was not our data, it felt creepy!
+                        </p>
+                        <p>
+                            Interestingly, we noticed that the data about <strong>Ads</strong> were missing…but Oski knows he’s definitely seen ads. Other important piece of data missing included the authors and the hashtags associated with the videos watched. 
+                        </p>
+                        
+                        <p class="lead">
+                            Data Scraping Process
+                        </p>
+                        <p>Using the TikTok API (and a little help from our Capstone friends), we scraped video details - including hashtags, sounds, and author handles – for Oski’s viewing history. It looked something like this: 
+                        </p>
+                        <h1>((add snapshot of data file))</h1>
+                        <p class="lead text-center"> The upshot: TikTok makes it possible to get much of your personal data, and it is quite detailed. However, we had to get creative to access the video and advertising details. </p>
+                    </div>
+
                     <div class='tableauPlaceholder' id='viz1651652001489' style='position:center; width: 125%;'>
                         <noscript><a href='#'><img alt='Dashboard 2 '
                                     src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Sp22_Info_247_TikTok_Proj_Hashtag_Ads_Dashboard&#47;Dashboard2&#47;1_rss.png'
