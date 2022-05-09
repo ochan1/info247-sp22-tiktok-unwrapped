@@ -1,120 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>TikTok (un)Wrapped</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Montserrat:wght@600;800&family=Work+Sans:wght@300&display=swap" rel="stylesheet"> 
-    </head>
-    <style>
-        img.section1 {
-            width: 146.25px;
-            height: 287.5px;
-        }
-        .row {
-            display: flex;
-        }
-        .column {
-            width: 50%;
-        }
-        .container.widechart {
-            width: 100%;
-            overflow-x: scroll;
-            -webkit-overflow-scrolling: touch;
-        }
-    </style>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-            <div class="container px-4">
-                <a class="navbar-brand" href="#page-top">TikTok (un)Wrapped</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#section1">Introduction</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section2">The Data Download</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section3">Analyzing Oski's Data</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#section4">Curious About Your Data?</a></li>
-                    </ul>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>TikTok (un)Wrapped</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Montserrat:wght@600;800&family=Work+Sans:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    img.section1 {
+        width: 146.25px;
+        height: 287.5px;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .column {
+        width: 50%;
+    }
+
+    .container.widechart {
+        width: 100%;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+</style>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container px-4">
+            <a class="navbar-brand" href="#page-top">TikTok (un)Wrapped</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#section1">Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section2">The Data Download</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section3">Analyzing Oski's Data</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section4">Curious About Your Data?</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-light" id="section1">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h1><strong>TikTok (un)Wrapped</strong></h1>
+                    <h2>
+                        How much do you <strong>really</strong> know about your social media data?
+                    </h2>
+                    <p class="lead">And did you know for most websites, you can download your data? </p>
+                    <p>
+                        After the European Union's General Data Protection Regulation (GDPR) was established, there has
+                        been an influx in the number of social media platforms offering data download tools to everyday
+                        users. In particular, these tools are in response to <a href='https://gdpr-info.eu/art-15-gdpr/'
+                            rel="noopener" target="_blank">Article 15: the Right to Access</a>, which states that these
+                        platforms must provide users with their "personal data…in a way that's easy to read, in a timely
+                        manner, and with enough background information to understand how they got it and how they use
+                        it." <small><a
+                                href="https://www.theverge.com/2019/1/27/18195630/gdpr-right-of-access-data-download-facebook-google-amazon-apple"
+                                rel="noopener" target="_blank">(1)</a></small>.
+                    </p>
+
+                    <p class="mb-3">
+                        As a relatively young, but hugely popular platform, we were curious how TikTok's user download
+                        process measured up.
+                    </p>
+                    <img src="img/oski.jpg" class="rounded-circle float-end mx-auto">
+                    <h3>Meet Oski</h3>
+                    <p>As a frequent TikTok user curious about his data, Oski volunteered to share his data with us to
+                        analyze. Join us on a journey to analyze Oski's data.</p>
+
                 </div>
             </div>
-        </nav>
-        <section class="bg-light" id="section1">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h1><strong>TikTok (un)Wrapped</strong></h1>
-                        <h2>
-                        How much do you <strong>really</strong> know about your social media data? 
-                        </h2>
-                        <p class="lead">And did you know for most websites, you can download your data? </p>
-                        <p>
-                            After the European Union’s General Data Protection Regulation (GDPR) was established, there has been an influx in the number of social media platforms offering data download tools to everyday users. In particular, these tools are in response to <a href='https://gdpr-info.eu/art-15-gdpr/' target="_">Article 15: the Right to Access</a>, which states that these platforms must provide users with their “personal data…in a way that’s easy to read, in a timely manner, and with enough background information to understand how they got it and how they use it.” <small><a href="https://www.theverge.com/2019/1/27/18195630/gdpr-right-of-access-data-download-facebook-google-amazon-apple" target="_">(1)</a></small>. 
-                        </p>
-                        
-                        <p class="mb-3">
-                            As a relatively young, but hugely popular platform, we were curious how TikTok’s user download process measured up.
-                        </p>
-                        <img src="img/oski.jpg" class="rounded-circle float-end mx-auto">
-                            <h3>Meet Oski</h3>
-                            <p>As a frequent TikTok user curious about his data, Oski volunteered to share his data with us to analyze. Join us on a journey to analyze Oski’s data.</p>
-                            
-                    </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="section1.1">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-3">Why TikTok?</h2>
+                    <div class="row">
+                        <div class="column">
+                            <p class="lead">A primer on TikTok</p>
+                            <p>
+                                TikTok is a short-form video-based social media app. Videos are accessed from a primary
+                                page: <a
+                                    href="https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you">the
+                                    "For You" Page</a>, often affectionately called the "fyp" for short. The For You
+                                page shows not just videos from friends and users you subscribe to, but can contain any
+                                publicly posted videos that the TikTok recommendation algorithm thinks you may like.
+                                According to TikTok, recommendations are driven by <strong>user interactions</strong>,
+                                <strong>video information</strong>, and <strong>device/user information</strong>.
+                            </p>
+                        </div>
+
+                        <div class="column">
+                            <img alt="" src="img/section1/image4.png">
+
+                            <p><small>TikTok's For You page (Screenshot from TikTok app)</small></p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="section1.1">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="mb-3">Why TikTok?</h2>
-                        <div class="row">
-                            <div class="column">
-                                <p class="lead">A primer on TikTok</p>
-                                <p>  
-                                    TikTok is a  short-form video-based social media app. Videos are accessed from a primary page: <a href="https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you">the “For You” Page</a>, often affectionately called the “fyp” for short. The For You page shows not just videos from friends and users you subscribe to, but can contain any publicly posted videos that the TikTok recommendation algorithm thinks you may like. According to TikTok, recommendations are driven by <strong>user interactions</strong>, <strong>video information</strong>, and <strong>device/user information</strong>.
-                                    </p>
-                            </div>
+                    <div class="row mt-5">
+                        <div class="column">
+                            <img alt="" src="img/tiktok_interests.jpeg" class="float-end">
 
-                            <div class="column">
-                                <img alt="" src="img/section1/image4.png">
-                                
-                                <p><small>TikTok's For You page (Screenshot from TikTok app)</small></p>
-                            </div>
+                            <p class="float-end"><small>TikTok's Interests Selection page (Screenshot from TikTok
+                                    app)</small></p>
                         </div>
+                        <div class="column">
+                            <p class="lead">
+                                You specify categories of interest when registering for an account...
 
-                        <div class="row mt-5">
-                            <div class="column">
-                                <img alt="" src="img/tiktok_interests.jpeg" class="float-end">
-                                
-                                <p class="float-end"><small>TikTok's Interests Selection page (Screenshot from TikTok app)</small></p>
-                            </div>
-                            <div class="column">
-                                <p class="lead">
-                                    You specify categories of interest when registering for an account...
-
-                                </p>
-                                <p>
-                                    ...but many (if not most) videos are “organically” served to you via the For You page. 
-                                    TikTok is unique among social media platforms for the explicit attention paid to “the algorithm” and how good it is at implicitly determining content aligned with your interests -- beyond what you explicitly tell the app.
-                                </p>
-                        </div>
+                            </p>
+                            <p>
+                                ...but many (if not most) videos are "organically" served to you via the For You page.
+                                TikTok is unique among social media platforms for the explicit attention paid to "the
+                                algorithm" and how good it is at implicitly determining content aligned with your
+                                interests -- beyond what you explicitly tell the app.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-                <!-- <center>
+        </div>
+    </section>
+    <!-- <center>
                     <span style="overflow: hidden; display: inline-block;">
                         <img class="section1" alt="" src="img/section1/image1.png">
                         <img class="section1" alt="" src="img/section1/image2.png">
@@ -129,106 +158,130 @@
                                     <a href="https://smartphones.gadgethacks.com/how-to/hide-your-liked-videos-tiktok-so-nobody-can-see-them-but-you-0384299/">Gadget Hacks</a>
                 </center> -->
 
-        </section>
+    </section>
 
 
 
-<!-- DATA ACCESS -->
+    <!-- DATA ACCESS -->
 
-        <section id="section2" class="bg-light">
-            <div class="container px-4">  
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>The TikTok Data Download</h2>
+    <section id="section2" class="bg-light">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>The TikTok Data Download</h2>
 
-                        <div class="row" style="width:100%">
-                            <div class="column">
-                                <p class="lead">How to access your data</p>
-                                <p class="mb-5">  
-                                    Here’s how Oski–and you!–can access your TikTok data. (You can also view <a href="https://support.tiktok.com/en/account-and-privacy/personalized-ads-and-data/requesting-your-data" target="_">TikTok’s official instructions here)</a>.
-                                </p>
-                                <div class="card">
+                    <div class="row" style="width:100%">
+                        <div class="column">
+                            <p class="lead">How to access your data</p>
+                            <p class="mb-5">
+                                Here's how Oski-and you!-can access your TikTok data. (You can also view <a
+                                    href="https://support.tiktok.com/en/account-and-privacy/personalized-ads-and-data/requesting-your-data"
+                                    rel="noopener" target="_blank">TikTok's official instructions here)</a>.
+                            </p>
+                            <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Roadbump or dark pattern?</h5>
-                                    <p class="card-text">TikTok takes "a few days" to process your request. TikTok then gives you a 4-day window to download the file, and only provides very subtle alerts. </p>
+                                    <p class="card-text">TikTok takes "a few days" to process your request. TikTok then
+                                        gives you a 4-day window to download the file, and only provides very subtle
+                                        alerts. </p>
                                     <p class="card-text">
-                                    If you miss or forget this window you are must repeat the request and waiting process. This happened to us frequently, often taking more than a week to actually obtain download files. While we can't say this friction is intentional on TikTok's part, it certainly takes some commitment and effort to obtain the data.
-                                    
-                                </p>
-                                </div>
-                                </div>
-                                </div>
+                                        If you miss or forget this window you are must repeat the request and waiting
+                                        process. This happened to us frequently, often taking more than a week to
+                                        actually obtain download files. While we can't say this friction is intentional
+                                        on TikTok's part, it certainly takes some commitment and effort to obtain the
+                                        data.
 
-                            <div class="column" style="text-align:center;">
-                                <video width="100%" height="800" controls>
-                                    <source src="img/tiktok_download_data_tutorial.mov" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
+                                    </p>
+                                </div>
                             </div>
+                        </div>
+
+                        <div class="column" style="text-align:center;">
+                            <video width="100%" height="800" controls>
+                                <source src="img/tiktok_download_data_tutorial.mov" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="section2">
-            <div class="container px-4">  
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">  
-                        <h2>What's in the Data Download file?</h2>
-                        <p class="lead">Data ≠ Information </p>
-                        <p>
-                        <a href=”https://www.theverge.com/2019/1/27/18195630/gdpr-right-of-access-data-download-facebook-google-amazon-apple” target="_">As others have noted</a>, just because data is available doesn’t mean it is informative.
-                        </p>
-                        <p>
-                            TikTok delivers downloads in human-readable" <code>.txt</code> files,
-                            and "machine-readable" <code>.json</code> files. However, both file types are highly nested .
-                        </p>
-                        <p>
-                            The nested nature of these files makes it difficult to view the actual contents. We put together a tree navigator to explore the different sections of the TikTok Data Download, as wll as its completeness. As you can see, the completeness and quality of the data range widely.
+        </div>
+    </section>
+    <section id="section2">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>What's in the Data Download file?</h2>
+                    <p class="lead">Data ≠ Information </p>
+                    <p>
+                        <a href=https://www.theverge.com/2019/1/27/18195630/gdpr-right-of-access-data-download-facebook-google-amazon-apple
+                            rel="noopener" target="_blank">As others have noted</a>, just because data is available
+                        doesn't mean it is informative.
+                    </p>
+                    <p>
+                        TikTok delivers downloads in human-readable" <code>.txt</code> files,
+                        and "machine-readable" <code>.json</code> files. However, both file types are highly nested .
+                    </p>
+                    <p>
+                        The nested nature of these files makes it difficult to view the actual contents. We put together
+                        a tree navigator to explore the different sections of the TikTok Data Download, as wll as its
+                        completeness. As you can see, the completeness and quality of the data range widely.
 
-                        </p>
-                    
-                    </div>
-                    
-                    <div class="container widechart mt-4 mb-4 justify-content-center">
+                    </p>
+
+                </div>
+
+                <div class="container widechart mt-4 mb-4 justify-content-center">
                     <p class="lead">The Hierarchy of TikTok's User Data Download File</p>
                     <h6>((Explain the chart and how to navigate it here))</h6>
-                    
-                        <iframe width="150%" height="500" frameborder="0"
-                            src="https://observablehq.com/embed/52947cfb487311ac?cells=chart">
-                        </iframe>
-                    </div>
 
-                    <div class="col-lg-8">
-                        <p class='mt-5 lead'>
-                            The details (once you’re able to access them) are actually quite granular. </p>
-                        <p>You can see your entire history of videos and the things you follow (users, sounds, hashtags), including the date and time you followed them. Also accessible are search terms, comments, and every login instance (date, time, and IP address). 
-                        </p>
-                        <p>
-                            None of this quite surprised us or Oski: these are all things you do on the app, after all. But seeing it all in one place, in this level of detail and magnitude made obvious the sheer scope of the surveillance that occurs anytime Oski uses the TikTok app. Even though it was not our data, it felt creepy!
-                        </p>
-                        <p>
-                            Interestingly, we noticed that the data about <strong>Ads</strong> were missing…but Oski knows he’s definitely seen ads. Other important piece of data missing included the authors and the hashtags associated with the videos watched. 
-                        </p>
-                        
-                        <p class="lead">
-                            Data Scraping Process
-                        </p>
-                        <p>Using the TikTok API (and a little help from our Capstone friends), we scraped video details - including hashtags, sounds, and author handles – for Oski’s viewing history. It looked something like this: 
-                        </p>
-                        <h1>((NTH: add graphic of data scraping process))</h1>
-                        <p class="lead text-center"> The upshot: TikTok makes it possible to get much of your personal data, and it is quite detailed. However, we had to get creative to access the video and advertising details. </p>
-                    </div>
+                    <iframe width="135%" height="300" frameborder="0"
+                        src="https://observablehq.com/embed/52947cfb487311ac?cells=chart">
+                    </iframe>
+                </div>
+
+                <div class="col-lg-8">
+                    <p class='mt-5 lead'>
+                        The details (once you're able to access them) are actually quite granular. </p>
+                    <p>You can see your entire history of videos and the things you follow (users, sounds, hashtags),
+                        including the date and time you followed them. Also accessible are search terms, comments, and
+                        every login instance (date, time, and IP address).
+                    </p>
+                    <p>
+                        None of this quite surprised us or Oski: these are all things you do on the app, after all. But
+                        seeing it all in one place, in this level of detail and magnitude made obvious the sheer scope
+                        of the surveillance that occurs anytime Oski uses the TikTok app. Even though it was not our
+                        data, it felt creepy!
+                    </p>
+                    <p>
+                        Interestingly, we noticed that the data about <strong>Ads</strong> were missing…but Oski knows
+                        he's definitely seen ads. Other important piece of data missing included the authors and the
+                        hashtags associated with the videos watched.
+                    </p>
+
+                    <p class="lead">
+                        Data Scraping Process
+                    </p>
+                    <p>Using the TikTok API (and a little help from our Capstone friends), we scraped video details -
+                        including hashtags, sounds, and author handles - for Oski's viewing history. It looked something
+                        like this:
+                    </p>
+                    <h1>((NTH: add graphic of data scraping process))</h1>
+                    <p class="lead text-center"> The upshot: TikTok makes it possible to get much of your personal data,
+                        and it is quite detailed. However, we had to get creative to access the video and advertising
+                        details. </p>
                 </div>
             </div>
-        </section>
-        <section id="section3" class="bg-light">
-            <div class="container px-4">  
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">  
-                    <h2>What does Oski’s data reveal about him...and the TikTok algorithm?</h2>
+        </div>
+    </section>
+    <section id="section3" class="bg-light">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>What does Oski's data reveal about him...and the TikTok algorithm?</h2>
                     <p class="lead">Analyzing Oski's data</p>
-                    <p>To shed some light on the recommendation algorithm's activity, we visualized a combination of Oski's data and the additional video details.</p>
+                    <p>To shed some light on the recommendation algorithm's activity, we visualized a combination of
+                        Oski's data and the additional video details.</p>
 
                     <h4>How did Oski's viewing activity change over time?</h4>
                     <h6> ((Tableau Rolling Average Line Chart))</h6>
@@ -240,13 +293,15 @@
 
                     <h4>Who were the top advertisers? Were these related to Oski's viewing interests?</h4>
 
-                    Ads are a big driver of revenue on social platforms – tiktok not excluded (TT makes $$ annually from advertising according to XXX)
-                    We took the top 100 most frequent advertisers from Oski’s data and grouped them:
+                    Ads are a big driver of revenue on social platforms - tiktok not excluded (TT makes $$ annually from
+                    advertising according to XXX)
+                    We took the top 100 most frequent advertisers from Oski's data and grouped them:
                     <h6>((Oscar's d3 category bubbles viz here))</h6>
-                    Many, but not all, advertising categories were related to top hashtags. 
-                    
-                    <h4>Advertising made up more and more of Oski's feed over time.</h4>
+                    Many, but not all, advertising categories were related to top hashtags.
 
+                    <h4>Advertising made up more and more of Oski's feed over time.</h4>
+                </div>
+                <center>
                     <div class='tableauPlaceholder' id='viz1651652001489' style='position:center; width: 125%;'>
                         <noscript><a href='#'><img alt='Dashboard 2 '
                                     src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Sp22_Info_247_TikTok_Proj_Hashtag_Ads_Dashboard&#47;Dashboard2&#47;1_rss.png'
@@ -270,13 +325,15 @@
                             <param name='filter' value='publish=yes' />
                         </object>
                     </div>
-                    <p></p>
-                    <div class="col-lg-8">
-                        <p class="lead">
-                            We can take a look at the trends in how often new Ads appear
-                            and how often ads show up relative to the videos watched.
-                        </p>
-                    </div>
+                </center>
+                <p></p>
+                <div class="col-lg-8">
+                    <p class="lead">
+                        We can take a look at the trends in how often new Ads appear
+                        and how often ads show up relative to the videos watched.
+                    </p>
+                </div>
+                <center>
                     <div class='tableauPlaceholder' id='viz1651653654834' style='position:center;'>
                         <noscript><a href='#'><img alt='Percent Ads and Percent Advertisers '
                                     src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Sp22_Info_247_TikTok_Proj_Ads_Percent&#47;PercentAdsandPercentAdvertisers&#47;1_rss.png'
@@ -286,7 +343,8 @@
                             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                             <param name='embed_code_version' value='3' />
                             <param name='site_root' value='' />
-                            <param name='name' value='Sp22_Info_247_TikTok_Proj_Ads_Percent&#47;PercentAdsandPercentAdvertisers' />
+                            <param name='name'
+                                value='Sp22_Info_247_TikTok_Proj_Ads_Percent&#47;PercentAdsandPercentAdvertisers' />
                             <param name='tabs' value='no' />
                             <param name='toolbar' value='yes' />
                             <param name='static_image'
@@ -300,113 +358,136 @@
                             <param name='filter' value='publish=yes' />
                         </object>
                     </div>
+                </center>
 
-                    <script type='text/javascript'>
-                        var divElement = document.getElementById('viz1651653654834');
-                        var vizElement = divElement.getElementsByTagName('object')[0];
-                        if (divElement.offsetWidth > 800) {
-                            vizElement.style.width = '1000px'; vizElement.style.height = '620.25px';
-                        } else if (divElement.offsetWidth > 500) {
-                            vizElement.style.width = '1000px'; vizElement.style.height = '620.25px';
-                        } else {
-                            vizElement.style.width = '100%'; vizElement.style.height = '545.25px';
-                        }
-                        var scriptElement = document.createElement('script');
-                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                    </script>
-                    <script type='text/javascript'>
-                        var divElement = document.getElementById('viz1651652001489');
-                        var vizElement = divElement.getElementsByTagName('object')[0];
-                        if (divElement.offsetWidth > 800) {
-                            vizElement.style.width = '1000px'; vizElement.style.height = '827px';
-                        } else if (divElement.offsetWidth > 500) {
-                            vizElement.style.width = '1000px'; vizElement.style.height = '827px';
-                        } else {
-                            vizElement.style.width = '100%'; vizElement.style.height = '727px';
-                        }
-                        var scriptElement = document.createElement('script');
-                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                    </script>
-                </div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1651653654834');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                        vizElement.style.width = '1000px'; vizElement.style.height = '620.25px';
+                    } else if (divElement.offsetWidth > 500) {
+                        vizElement.style.width = '1000px'; vizElement.style.height = '620.25px';
+                    } else {
+                        vizElement.style.width = '100%'; vizElement.style.height = '545.25px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1651652001489');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                        vizElement.style.width = '1000px'; vizElement.style.height = '827px';
+                    } else if (divElement.offsetWidth > 500) {
+                        vizElement.style.width = '1000px'; vizElement.style.height = '827px';
+                    } else {
+                        vizElement.style.width = '100%'; vizElement.style.height = '727px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
             </div>
-        </section>
-        <section id="section4"> 
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
+        </div>
+    </section>
+    <section id="section4">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
                     <h2>Curious about exploring your own data?</h3>
 
-                    <p>Here are some actions you can take to invoke your right to access your data, better understand how platforms with recommender algorithms "see" you, and regain control over your feed.</p>
-                    
+                        <p>Here are some actions you can take to invoke your right to access your data, better
+                            understand how platforms with recommender algorithms "see" you, and regain control over your
+                            feed.</p>
 
-                    <p class="lead">1. Take advantage of data download tools offered by the sites you use.</p>
-                        All of the most popular online services offer some kind of data access or download services. Here is a roundup of access instructions from the most popular social media sites. 
-                    <ul>
-                        <li><a href="https://support.tiktok.com/en/account-and-privacy/personalized-ads-and-data/requesting-your-data">TikTok</a></li>
-                        <li><a href="https://support.google.com/accounts/answer/3024190?hl=en">Google</a></li>
-                        <li><a href="https://help.twitter.com/en/managing-your-account/accessing-your-twitter-data">Twitter</a></li>
-                        <li>Facebook (<a href="https://www.facebook.com/help/212802592074644">Help page</a>, <a href="https://www.facebook.com/your_information/">Your Information page</a>)</li>
-                        <li><a href="https://www.instagram.com/accounts/access_tool/">Instagram</a></li>
-                        <li><a href="https://support.snapchat.com/en-US/a/download-my-data">Snapchat</a></li>
-                        <li><a href="https://www.linkedin.com/help/linkedin/answer/50191/downloading-your-account-data?lang=en">LinkedIn</a></li>
-                    </ul>
-                    <p>Like we've seen here, it's not always easy to understand the data once you get it. If you're curious and technically inclined
-                        you can repeat your analysis using the Python and Tableau notebooks we created. 
-                    </p>
-                    <p class="lead"> 2. (Re)gain control of your feeds.</p>
-                    We don't have to be passive consumers.
-                    <strong>Link to Algo Unwrapped Zine???</strong>
+
+                        <p class="lead">1. Take advantage of data download tools offered by the sites you use.</p>
+                        All of the most popular online services offer some kind of data access or download services.
+                        Here is a roundup of access instructions from the most popular social media sites.
+                        <ul>
+                            <li><a
+                                    href="https://support.tiktok.com/en/account-and-privacy/personalized-ads-and-data/requesting-your-data">TikTok</a>
+                            </li>
+                            <li><a href="https://support.google.com/accounts/answer/3024190?hl=en">Google</a></li>
+                            <li><a
+                                    href="https://help.twitter.com/en/managing-your-account/accessing-your-twitter-data">Twitter</a>
+                            </li>
+                            <li>Facebook (<a href="https://www.facebook.com/help/212802592074644">Help page</a>, <a
+                                    href="https://www.facebook.com/your_information/">Your Information page</a>)</li>
+                            <li><a href="https://www.instagram.com/accounts/access_tool/">Instagram</a></li>
+                            <li><a href="https://support.snapchat.com/en-US/a/download-my-data">Snapchat</a></li>
+                            <li><a
+                                    href="https://www.linkedin.com/help/linkedin/answer/50191/downloading-your-account-data?lang=en">LinkedIn</a>
+                            </li>
+                        </ul>
+                        <p>Like we've seen here, it's not always easy to understand the data once you get it. If you're
+                            curious and technically inclined
+                            you can repeat your analysis using the Python and Tableau notebooks we created.
+                        </p>
+                        <p class="lead"> 2. (Re)gain control of your feeds.</p>
+                        We don't have to be passive consumers.
+                        <strong>Link to Algo Unwrapped Zine???</strong>
                 </div>
 
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container px-4">
-                <div class="row justify-content-center">
-                    
-                
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-4">
+            <div class="row justify-content-center">
+
+
                 <div class='col-4 text-white'>
                     <p class="mb-1 lead text-white">TikTok (un)Wrapped by:</p>
-                    <img src="img/angela.jpg" class="rounded-circle float-start img-fluid" alt="Angela Liu" height="50em" width="50em">
-                    
+                    <img src="img/angela.jpg" class="rounded-circle float-start img-fluid" alt="Angela Liu"
+                        height="50em" width="50em">
+
                     <div class="row">
-                    <p class="lead mb-0">Angela Liu</p>
-                    <p class="mt-0 small">Masters of Information Management & Systems student at the School of Information focused on Data Science. 
-                    </p>
+                        <p class="lead mb-0">Angela Liu</p>
+                        <p class="mt-0 small">
+                            Masters of Information Management & Systems
+                            at the School of Information focused on Data Science.
+                        </p>
                     </div>
-                    <img src="img/oscar.jpg" class="rounded-circle float-start img-fluid" alt="Oscar Chan" height="50em" width="50em">
+                    <img src="img/oscar.jpg" class="rounded-circle float-start img-fluid" alt="Oscar Chan" height="50em"
+                        width="50em">
                     <div class="row">
-                    <p class="lead mb-0">Oscar Chan</p>
-                    <p class="mt-0 small">Masters of Information Management & Systems</p>
+                        <p class="lead mb-0">Oscar Chan</p>
+                        <p class="mt-0 small">
+                            Masters of Electrical Engineering & Computer Sciences
+                            at the College of Engineering focused on Human-Computer Interaction (HCI).
+                        </p>
                     </div>
                 </div>
-                <div class='col-6 text-white pt-4'>                
+                <div class='col-6 text-white pt-4'>
                     <p class="mb-1 text-white">
-                    Created for INFO 247: Information Visualization</p>
-                    <p class="small mt-0 mb-3 text-white">taught by Marti Hearst in Spring 2022 at the School of Information, UC Berkeley.</p>
+                        Created for INFO 247: Information Visualization</p>
+                    <p class="small mt-0 mb-3 text-white">taught by Marti Hearst in Spring 2022 at the School of
+                        Information, UC Berkeley.</p>
                     <p class="m-0 text-white">
-                    This project also supports the MIMS Capstone Project,
-                    <a href="https://www.ischool.berkeley.edu/projects/2022/algorithm-un-wrapped-sense-making-tools-algorithmic-content-recommendations">Algorithms Unwrapped</a>.
-                </p>
-                <p class="small m-0 text-white">
-                    Algorithms Unwrapped is a machine learning education tool to help social
-                    media users better understand their own algorithmic content feeds so
-                    that they can learn how the algorithm sees them, and reflect on what
-                    they really want out of their algorithmic content recommendations.
-                </p>
+                        This project also supports the MIMS Capstone Project,
+                        <a
+                            href="https://www.ischool.berkeley.edu/projects/2022/algorithm-un-wrapped-sense-making-tools-algorithmic-content-recommendations">Algorithms
+                            Unwrapped</a>.
+                    </p>
+                    <p class="small m-0 text-white">
+                        Algorithms Unwrapped is a machine learning education tool to help social
+                        media users better understand their own algorithmic content feeds so
+                        that they can learn how the algorithm sees them, and reflect on what
+                        they really want out of their algorithmic content recommendations.
+                    </p>
                 </div>
 
-              </div>
-
-
-                
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+
+
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
