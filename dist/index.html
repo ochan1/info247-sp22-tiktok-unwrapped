@@ -156,9 +156,10 @@
                                 <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">Roadbump or dark pattern?</h5>
-                                    <p class="card-text">TikTok takes "a few days" to process your request. TikTok then gives you a 4-day window to download the file, with few alerts. </p>
+                                    <p class="card-text">TikTok takes "a few days" to process your request. TikTok then gives you a 4-day window to download the file, and only provides very subtle alerts. </p>
                                     <p class="card-text">
                                     If you miss or forget this window you are must repeat the request and waiting process. This happened to us frequently, often taking more than a week to actually obtain download files. While we can't say this friction is intentional on TikTok's part, it certainly takes some commitment and effort to obtain the data.
+                                    
                                 </p>
                                 </div>
                                 </div>
@@ -182,14 +183,14 @@
                         <h2>What's in the Data Download file?</h2>
                         <p class="lead">Data ≠ Information </p>
                         <p>
-                        <a href=”https://www.theverge.com/2019/1/27/18195630/gdpr-right-of-access-data-download-facebook-google-amazon-apple” target="_">As others have noted</a>, just because the data is available doesn’t mean it’s digestible. The completeness and quality of the data range widely.
+                        <a href=”https://www.theverge.com/2019/1/27/18195630/gdpr-right-of-access-data-download-facebook-google-amazon-apple” target="_">As others have noted</a>, just because data is available doesn’t mean it is informative.
                         </p>
                         <p>
                             TikTok delivers downloads in human-readable" <code>.txt</code> files,
                             and "machine-readable" <code>.json</code> files. However, both file types are highly nested .
                         </p>
                         <p>
-                            The nested nature of these files makes it difficult to view the actual contents. We put together a tree navigator to explore the different sections of the TikTok Data Download, as wll as its completeness.
+                            The nested nature of these files makes it difficult to view the actual contents. We put together a tree navigator to explore the different sections of the TikTok Data Download, as wll as its completeness. As you can see, the completeness and quality of the data range widely.
 
                         </p>
                     
@@ -197,7 +198,7 @@
                     
                     <div class="container widechart mt-4 mb-4 justify-content-center">
                     <p class="lead">The Hierarchy of TikTok's User Data Download File</p>
-                    <h1>((Explain the chart and how to navigate it here))</h1>
+                    <h6>((Explain the chart and how to navigate it here))</h6>
                     
                         <iframe width="150%" height="500" frameborder="0"
                             src="https://observablehq.com/embed/52947cfb487311ac?cells=chart">
@@ -236,16 +237,21 @@
                     <p>To shed some light on the recommendation algorithm's activity, we visualized a combination of Oski's data and the additional video details.</p>
 
                     <h4>How did Oski's viewing activity change over time?</h4>
+                    <h6> ((Tableau Rolling Average Line Chart))</h6>
 
-                    <h4>What content categories is TikTok recommending to Oski?</h4>
-                    <h1>((Oscar's d3 category bubbles viz here))</h1>
 
-                    <h4>What advertisements are served?</h4>
+                    <h4>What content categories is TikTok recommending to Oski? How did these change over time?</h4>
+                    <h6> ((Tableau Rank Chart))</h6>
+
+
+                    <h4>Who were the top advertisers? Were these related to Oski's viewing interests?</h4>
+
                     Ads are a big driver of revenue on social platforms – tiktok not excluded (TT makes $$ annually from advertising according to XXX)
                     We took the top 100 most frequent advertisers from Oski’s data and grouped them:
-                    
+                    <h6>((Oscar's d3 category bubbles viz here))</h6>
                     Many, but not all, advertising categories were related to top hashtags. 
-
+                    
+                    <h4>Advertising made up more and more of Oski's feed over time.</h4>
 
                     <div class='tableauPlaceholder' id='viz1651652001489' style='position:center; width: 125%;'>
                         <noscript><a href='#'><img alt='Dashboard 2 '
@@ -338,10 +344,11 @@
                     <div class="col-lg-8">
                     <h2>Curious about exploring your own data?</h3>
 
-                    <p class="lead">Here are some actions you can take to invoke your right to access data.</p>
+                    <p>Here are some actions you can take to invoke your right to access your data, better understand how platforms with recommender algorithms "see" you, and regain control over your feed.</p>
+                    
 
-                    <h4>1. Take advantage of data download tools from the sites you use.</h4>
-                        All of the most popular online services offer some kind of data access or download services. Here is a roundup of access instructions from the most popular social media sites.
+                    <p class="lead">1. Take advantage of data download tools offered by the sites you use.</p>
+                        All of the most popular online services offer some kind of data access or download services. Here is a roundup of access instructions from the most popular social media sites. 
                     <ul>
                         <li><a href="https://support.tiktok.com/en/account-and-privacy/personalized-ads-and-data/requesting-your-data">TikTok</a></li>
                         <li><a href="https://support.google.com/accounts/answer/3024190?hl=en">Google</a></li>
@@ -354,7 +361,7 @@
                     <p>Like we've seen here, it's not always easy to understand the data once you get it. If you're curious and technically inclined
                         you can repeat your analysis using the Python and Tableau notebooks we created. 
                     </p>
-                    <h4> 2. (Re)gain control of your feeds.</h4>
+                    <p class="lead"> 2. (Re)gain control of your feeds.</p>
                     We don't have to be passive consumers.
                     <strong>Link to Algo Unwrapped Zine???</strong>
                 </div>
@@ -363,19 +370,44 @@
         <!-- Footer-->
         <footer class="py-5 bg-dark">
             <div class="container px-4">
-                <p class="m-0 text-center lead text-white">Spring 2022 Info 247 and MIMS Algorithms Unwrapped Capstone</p>
-            
-                <p class="m-0 text-center text-white">
-                    This project supports the work being done for MIMS Capstone Project,
+                <div class="row justify-content-center">
+                    
+                
+                <div class='col-4 text-white'>
+                    <p class="mb-1 lead text-white">TikTok (un)Wrapped by:</p>
+                    <img src="img/angela.jpg" class="rounded-circle float-start img-fluid" alt="Angela Liu" height="50em" width="50em">
+                    
+                    <div class="row">
+                    <p class="lead mb-0">Angela Liu</p>
+                    <p class="mt-0 small">Masters of Information Management & Systems student at the School of Information focused on Data Science. 
+                    </p>
+                    </div>
+                    <img src="img/oscar.jpg" class="rounded-circle float-start img-fluid" alt="Oscar Chan" height="50em" width="50em">
+                    <div class="row">
+                    <p class="lead mb-0">Oscar Chan</p>
+                    <p class="mt-0 small">Masters of Information Management & Systems</p>
+                    </div>
+                </div>
+                <div class='col-6 text-white pt-4'>                
+                    <p class="mb-1 text-white">
+                    Created for INFO 247: Information Visualization</p>
+                    <p class="small mt-0 mb-3 text-white">taught by Marti Hearst in Spring 2022 at the School of Information, UC Berkeley.</p>
+                    <p class="m-0 text-white">
+                    This project also supports the MIMS Capstone Project,
                     <a href="https://www.ischool.berkeley.edu/projects/2022/algorithm-un-wrapped-sense-making-tools-algorithmic-content-recommendations">Algorithms Unwrapped</a>.
                 </p>
-                <p class="m-0 text-center text-white">
+                <p class="small m-0 text-white">
                     Algorithms Unwrapped is a machine learning education tool to help social
                     media users better understand their own algorithmic content feeds so
                     that they can learn how the algorithm sees them, and reflect on what
                     they really want out of their algorithmic content recommendations.
                 </p>
-            
+                </div>
+
+              </div>
+
+
+                
             </div>
         </footer>
         <!-- Bootstrap core JS-->
