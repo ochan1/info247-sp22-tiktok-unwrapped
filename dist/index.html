@@ -294,7 +294,8 @@
                 <div class="col-lg-8">
                     <p class='mt-5 lead'>
                         The details (once you're able to access them) are actually quite granular. </p>
-                    <p>You can see your entire history of videos and the things you follow (users, sounds, hashtags),
+                    <p>
+                        Under the <b>Activity</b> section of the data, you can see your entire history of videos and the things you follow (users, sounds, hashtags),
                         including the date and time you followed them. Also accessible are search terms, comments, and
                         every login instance (date, time, and IP address).
                     </p>
@@ -305,7 +306,8 @@
                         data, it felt creepy!
                     </p>
                     <p>
-                        Interestingly, we noticed that the data about <strong>Ads</strong> were missing ... but Oski knows
+                        Interestingly, we noticed that the data about <strong>Ads</strong> were missing
+                        (see <strong>Ads and Data</strong> for the data that they supposedly supply) ... but Oski knows
                         he's definitely seen ads. Other important piece of data missing included the authors and the
                         hashtags associated with the videos watched.
                     </p>
@@ -314,10 +316,14 @@
                         Data Scraping Process
                     </p>
                     <p>Using the TikTok API (and a little help from our Capstone friends), we scraped video details -
-                        including hashtags, sounds, and author handles - for Oski's viewing history. It looked something
-                        like this:
+                        including hashtags, sounds, and author handles - for Oski's viewing history. The process in
+                        general looked something like this:
                     </p>
-                    <h1>((NTH: add graphic of data scraping process))</h1>
+                    <img class="" alt="" src="img/howtoscrape.PNG" style="width:100%">
+                    <p>
+                        We use Python to take each entry of the user's <strong>Activity's Video Browsing History</strong> and feed the VideoLink
+                        of each entry to the <a href="https://github.com/davidteather/TikTok-Api" rel="noopener" target="_blank">Unofficial TikTok API</a>.
+                    </p>
                     <p class="lead text-center"> The upshot: TikTok makes it possible to get much of your personal data,
                         and it is quite detailed. However, we had to get creative to access the video and advertising
                         details. </p>
