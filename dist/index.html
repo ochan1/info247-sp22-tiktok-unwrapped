@@ -249,33 +249,33 @@
                     <table>
                         <tr>
                             <th>
-                                <span class="dot" r="10" style="background-color:lightblue;"></span>
+                                <span class="dot" style="background-color:lightblue;"></span>
                             </th>
-                            <th>
+                            <th style="font-size:12px;">
                                 Mutliple Data, each entry share the same fields in child nodes
                             </th>
                         </tr>
                         <tr>
                             <th>
-                                <span class="dot" r="10" style="background-color:#CC2552;"></span>
+                                <span class="dot" style="background-color:#CC2552;"></span>
                             </th>
-                            <th>
+                            <th style="font-size:12px;">
                                 Data Node (can represent a group of data or a value)
                             </th>
                         </tr>
                         <tr>
                             <th>
-                                <span class="dot" r="10" style="background-color:white;border-style:solid;border-color:red;"></span>
+                                <span class="dot" style="background-color:white;border-style:solid;border-color:red;"></span>
                             </th>
-                            <th>
+                            <th style="font-size:12px;">
                                 Data Node like above, but specifically marked for the Ads data
                             </th>
                         </tr>
                         <tr>
                             <th>
-                                <span class="dot" r="10" style="background-color:#CC2552;opacity:0.3;"></span>
+                                <span class="dot" style="background-color:#CC2552;opacity:0.3;"></span>
                             </th>
-                            <th>
+                            <th style="font-size:12px;">
                                 (Fading dots on mouseover)
                                 More sub-data available, <span style="color:red;">click to reveal</span> more of the data tree
                             </th>
@@ -352,10 +352,19 @@
 
                 <div class="col-lg-8">
                     <p class="h4 mt-5 mb-0 text-center">Who were Oski's top advertisers? Were these related to his viewing interests?</p>
-
-                    Ads are a big driver of revenue on social platforms - TikTok included. Since much of the Ad data was missing from the data download, we wanted to see what we could learn about the trends from the advertising data identified.
-                    We took the top 100 most frequent advertisers from Oski's data and grouped them. Many, but not all, advertising categories were related to top hashtags.
-                    <h6>((Oscar's d3 category bubbles viz here))</h6>
+                    <p>
+                        Ads are a big driver of revenue on social platforms - TikTok included. Since much of the Ad data was
+                        missing from the data download, we wanted to see what we could learn about the trends from the advertising data identified.
+                        We took the top 100 most frequent advertisers from Oski's data and grouped them. Many, but not all,
+                        advertising categories were related to top hashtags.
+                    </p>
+                    <p>
+                        In the interactive vizualization below, the groups that don't have an ads or hashtag counterpart
+                        are more transparent / clear.
+                    </p>
+                </div>
+                <div class="justify-content-center">
+                    <iframe width="100%" height="1000" frameborder="0" src="https://observablehq.com/embed/a8ef99d9df04e037?cell=*"></iframe>
                 </div>
 
                 <div class="container widechart mt-4 mb-4 justify-content-center">
