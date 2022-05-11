@@ -91,6 +91,8 @@
                     <p>As a frequent TikTok user curious about his data, Oski volunteered to share his data with us to
                         analyze. Join us on a journey to analyze Oski's data.</p>
 
+                        <h6 class="mt-2">For the best viewing experience, please view this page full screen on a desktop.</h6>
+
                 </div>
             </div>
         </div>
@@ -235,8 +237,7 @@
 
                     </p>
 
-                    <p class="lead">The Hierarchy of TikTok's User Data Download File</p>
-                    <h6>For the best viewing experience, please view this full screen on a desktop</h6>
+                    <h4>The Hierarchy of TikTok's User Data Download File</h4>
                     <p>
                         We can view the data hierarchy available from the downloaded TikTok data.
                         The user doesn't interact with all parts of TikTok, so some of the data
@@ -312,18 +313,18 @@
                         hashtags associated with the videos watched.
                     </p>
 
-                    <p class="lead">
-                        Data Scraping Process
-                    </p>
+                    <h4>Filling in the Video and Ads data gaps</h4>
                     <p>Using the TikTok API (and a little help from our Capstone friends), we scraped video details -
-                        including hashtags, sounds, and author handles - for Oski's viewing history. The process in
-                        general looked something like this:
+                        including hashtags, sounds, and author handles - for Oski's viewing history. We used Python to take each entry of the user's 
+                        <strong>Activity's Video Browsing History</strong> and feed the VideoLink of each entry to the <a href="https://github.com/davidteather/TikTok-Api" rel="noopener" target="_blank">Unofficial TikTok API</a>.
+                         The process looked something like this:
                     </p>
+                    </div>
+                    <div class="container widechart mt-4 mb-4 justify-content-center">
                     <img class="" alt="" src="img/howtoscrape.PNG" style="width:100%">
-                    <p>
-                        We use Python to take each entry of the user's <strong>Activity's Video Browsing History</strong> and feed the VideoLink
-                        of each entry to the <a href="https://github.com/davidteather/TikTok-Api" rel="noopener" target="_blank">Unofficial TikTok API</a>.
-                    </p>
+                    </div>
+                    <div class="col-lg-8">
+                    
                     <p class="lead text-center"> The upshot: TikTok makes it possible to get much of your personal data,
                         and it is quite detailed. However, we had to get creative to access the video and advertising
                         details. </p>
@@ -351,7 +352,7 @@
                 </div>
 
                 <div class="col-lg-8">
-                    <p class="h4 mt-5 mb-0 text-center">Who were Oski's top advertisers? Were these related to his viewing interests?</p>
+                    <p class="h4 mt-5 mb-0 text-center">Who is advertising to Oski? Were these related to his viewing interests?</p>
                     <p>
                         Ads are a big driver of revenue on social platforms - TikTok included. Since much of the Ad data was
                         missing from the data download, we wanted to see what we could learn about the trends from the advertising data identified.
@@ -368,10 +369,17 @@
                         for Oski, <strong>food</strong>.
                     </p>
                 </div>
-                <div class="justify-content-center">
+                <div class="container widechart mt-4 mb-4 justify-content-center">
                     <iframe width="100%" height="1000" frameborder="0" src="https://observablehq.com/embed/a8ef99d9df04e037?cell=*"></iframe>
                 </div>
 
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <p class="h4 mt-5 text-center">What patterns exist in the ads Oski sees?</p> 
+                    <p>Next, we were curious if there were any clear patterns in the advertising data. We calculated the percent of 
+                        Oski's videos that were ads over time and plotted it below.
+                    </p>
+                </div>
                 <div class="container widechart mt-4 mb-4 justify-content-center">
                     <div class='tableauPlaceholder' id='viz1652120029281' style='position: relative'>
                         <noscript><a href='#'><img alt='Proportion of Ads in Oski&#39;s For You Page Video Feed '
@@ -405,8 +413,16 @@
                         vizElement.parentNode.insertBefore(scriptElement, vizElement);
                     </script>
                 </div>
-                <div class="col-lg-8">
-                    Next, we tried to see whether there were any patterns in the advertising data. We filtered out just the top 20 advertisers below.
+            </div>
+
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8 mt-6">
+                    
+
+                   <p> Then, we filtered out just the top 20 advertisers and looked at when and how frequently they served ads over time. Each <strong>row</strong> is an advertiser, and
+                    each <strong>bar ( | )</strong> represents an ad instance for that particular advertiser. </p>
+
+                    <p class="text-center small mb-0">Click through the navigation to learn about trends in Oski's advertisements.</p>
 
                 </div>
 
