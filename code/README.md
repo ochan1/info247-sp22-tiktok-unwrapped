@@ -1,4 +1,5 @@
 To use the code here, you will need to install Python
+
 We used Python 3.9 in our case
 
 Please note the Shell scripts were ran for a Windows computer via Git Bash. The Python is system independent (as long as it can run Python). The only thing that you may need to modify for a Linux or Mac run are a few file path strings in the `run_scraping.sh` Shell script.
